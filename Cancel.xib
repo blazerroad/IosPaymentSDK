@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRANSansMobile.ttf">
+            <string>IRANSansMobile</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CancelView" customModule="SayanInAppPayment" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="amt-Pr-qPv">
+                    <rect key="frame" x="50" y="238.5" width="275" height="210"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cancel" translatesAutoresizingMaskIntoConstraints="NO" id="C18-fP-yRI" customClass="cancel">
+                            <rect key="frame" x="114" y="20" width="46" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="bI7-xX-9tC"/>
+                                <constraint firstAttribute="height" constant="46" id="i6z-jF-WWk"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="در انجام تراکنش شما خطایی رخ داده است" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqc-Dr-sm6">
+                            <rect key="frame" x="10" y="95" width="254.5" height="19"/>
+                            <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="15"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="در صورت کسر وجه این مبلغ حداکثر ظرف ۷۲ ساعت به حساب شما برگشت داده خواهد شد" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jf-oc-mEu">
+                            <rect key="frame" x="10" y="122" width="255" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="255" id="GxS-kw-iiP"/>
+                                <constraint firstAttribute="height" constant="40" id="oWn-j1-8TM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="12"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Re-3L-1lJ">
+                            <rect key="frame" x="16" y="168" width="243" height="34"/>
+                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="IRANSansMobile" family="IRANSansMobile" pointSize="17"/>
+                            <state key="normal" title="برگشت به اپ">
+                                <color key="titleColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="BtnTouched:" destination="-1" eventType="touchUpInside" id="eio-et-daZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Fqc-Dr-sm6" firstAttribute="centerX" secondItem="amt-Pr-qPv" secondAttribute="centerX" id="HAE-iR-nfW"/>
+                        <constraint firstItem="C18-fP-yRI" firstAttribute="centerX" secondItem="amt-Pr-qPv" secondAttribute="centerX" id="MXl-VL-qSn"/>
+                        <constraint firstItem="Fqc-Dr-sm6" firstAttribute="centerY" secondItem="amt-Pr-qPv" secondAttribute="centerY" id="Mjl-5f-NC2"/>
+                        <constraint firstAttribute="height" constant="210" id="NP1-H3-vyZ"/>
+                        <constraint firstItem="C18-fP-yRI" firstAttribute="top" secondItem="amt-Pr-qPv" secondAttribute="top" constant="20" id="Os2-vw-D1c"/>
+                        <constraint firstAttribute="trailing" secondItem="5Re-3L-1lJ" secondAttribute="trailing" constant="16" id="SX2-Sw-zFc"/>
+                        <constraint firstItem="5Re-3L-1lJ" firstAttribute="leading" secondItem="amt-Pr-qPv" secondAttribute="leading" constant="16" id="X3k-Yu-HBg"/>
+                        <constraint firstItem="7jf-oc-mEu" firstAttribute="centerX" secondItem="amt-Pr-qPv" secondAttribute="centerX" id="YbF-Jc-EPU"/>
+                        <constraint firstItem="5Re-3L-1lJ" firstAttribute="centerX" secondItem="amt-Pr-qPv" secondAttribute="centerX" id="Z90-41-Rxc"/>
+                        <constraint firstAttribute="bottom" secondItem="5Re-3L-1lJ" secondAttribute="bottom" constant="8" id="bPu-6o-73i"/>
+                        <constraint firstItem="7jf-oc-mEu" firstAttribute="top" secondItem="Fqc-Dr-sm6" secondAttribute="bottom" constant="8" id="fgk-gm-Mbt"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.4902611301" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="amt-Pr-qPv" secondAttribute="trailing" constant="50" id="BHd-LM-5EC"/>
+                <constraint firstItem="amt-Pr-qPv" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="dL1-Rk-41f"/>
+                <constraint firstItem="amt-Pr-qPv" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="mQY-rD-qRf"/>
+                <constraint firstItem="amt-Pr-qPv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="xmC-kV-rNA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="34.5" y="81.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Cancel" width="50" height="50"/>
+    </resources>
+</document>
